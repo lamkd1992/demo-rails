@@ -21,6 +21,7 @@
 /yarn-error.log
 
 /public/assets
+/db/mysql/volumes
 .byebug_history
 
 # Ignore master key for decrypting credentials and more.
