@@ -1,4 +1,4 @@
-FROM ruby:2.5
+FROM ruby:3
 RUN apt-get update -qq && apt-get install -y nodejs
 WORKDIR /myapp
 COPY Gemfile /myapp/Gemfile

@@ -5,3 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Dir[Rails.root.join('db/seeds/*.rb')].sort.each do |seed_file|
+  puts "Seeding #{seed_file} file" # rubocop:disable Rails/Output
+  load seed_file
+end
